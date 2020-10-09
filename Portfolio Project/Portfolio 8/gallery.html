@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Page</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kanit&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/6e0bea99d7.js"
+      crossorigin="anonymous"
+    ></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <div id="logo">
+        <a href="/index.html">NK</a>
+      </div>
+      <nav>
+        <a onclick="mobileMenu()" href="#" class="icon">
+          <span class="material-icons">menu</span>
+        </a>
+        <ul>
+          <li><a href="#">Portfolio <i class="fas fa-angle-down"></i> </a>
+            <ul>
+              <li><a href="/index.html#work">Work</a></li>
+              <li><a href="/index.html#experience">Experience</a></li>
+              <li><a href="/index.html#skills">Skills</a></li>
+              <li><a href="gallery.html">Gallery</a></li>
+              <li><a href="animation.html">Animation</a></li>
+            </ul>
+          </li>
+          <li><a href="#footer">Contact me</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div class="container">
+        <section id="gallery">
+          <div id="gallery-grid">
+            <img
+              id="a"
+              class="grid-item"
+              src="https://images.unsplash.com/photo-1601628375201-eca1e46fe878?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1400&q=80"
+              alt=""
+            />
+            <img
+              id="b"
+              class="grid-item"
+              src="https://images.unsplash.com/photo-1580810363509-3054ce6efeaa?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1234&q=80"
+              alt=""
+            />
+            <img
+              id="c"
+              class="grid-item"
+              src="https://images.unsplash.com/photo-1601780248946-d5b751d07699?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2467&q=80"
+              alt=""
+            />
+            <img
+              id="d"
+              class="grid-item"
+              src="https://images.unsplash.com/photo-1601932985797-600a972d934f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1232&q=80"
+              alt=""
+            />
+            <img
+              id="e"
+              class="grid-item"
+              src="https://images.unsplash.com/photo-1601782000994-aa2099bd26c6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1234&q=80"
+              alt=""
+            />
+            <img
+              id="f"
+              class="grid-item"
+              src="https://images.unsplash.com/photo-1601893920895-e3ed4a655d27?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80"
+              alt=""
+            />
+            <img
+              id="g"
+              class="grid-item"
+              src="https://images.unsplash.com/photo-1601660803615-4e5bbb72596f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1164&q=80"
+              alt=""
+            />
+            <img
+              id="h"
+              class="grid-item"
+              src="https://images.unsplash.com/photo-1601867154488-819d74f3ab24?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1234&q=80"
+              alt=""
+            />
+            <img
+              id="i"
+              class="grid-item"
+              src="https://images.unsplash.com/photo-1601564139947-c7de5a44d9d2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2534&q=80"
+              alt=""
+            />
+          </div>
+          <!--Back to top button  -->
+        
+        <button class="scrollToTopBtn"> <i class="fas fa-caret-square-up fa-4x"></i></button>
+        </section>
+      </div>
+    </main>
+
+    <footer id="footer">
+      <form>
+        <h3>I'd love to hear more about your project</h3>
+        <div class="contact-form">
+          <label for="name">Name</label>
+          <input type="text" name="name" id="name" placeholder="Name" />
+        </div>
+        <div class="contact-form">
+          <label for="email">Email Address</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Email Address"
+          />
+        </div>
+        <div class="contact-form">
+          <label for="message">Your Message</label>
+          <textarea
+            name="message"
+            id="message"
+            placeholder="Your Message"
+          ></textarea>
+        </div>
+        <div class="contact-form">
+          <input type="submit" id="submit" value="send" />
+        </div>
+      </form>
+      <p>&copy;Copyright 2020</p>
+    </footer>
+    
+    <script src="/main.js"></script>
+
+  </body>
+</html>

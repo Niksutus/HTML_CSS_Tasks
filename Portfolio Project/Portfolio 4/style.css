@@ -1,0 +1,305 @@
+* {
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+h1,h2 {
+    margin-bottom: 2rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1200px;
+    background-color: rgba(255,255,255,0.95);
+    padding: 3rem;
+    border-radius: 2px;
+    min-height: 25%;
+    margin: 0 auto;
+}
+
+/* Header area */
+
+header {
+    background-color: #042E5F;
+    padding: 1.5rem;
+    /* text-align: right; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header #logo a{
+
+    font-size: 2rem;
+    text-decoration: none;
+    color: #E06504;
+}
+
+header nav ul {
+    list-style-type: none;
+    padding: 1.5rem;
+}
+
+header nav ul li{
+    display: inline-block;
+}
+
+header nav ul li a{
+    color: white;
+    text-decoration: none;
+    padding: 1.5rem;
+}
+
+header nav ul li a:hover {
+    background-color: #E06504;
+}
+
+/* Hero-banner */
+
+main #hero-banner {
+    background: url("https://images.unsplash.com/photo-1504353888070-4ee702492320?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2522&q=80") no-repeat fixed center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 85vh;
+}
+
+main #hero-banner h1 {
+    font-size: 4rem; 
+    color: white;
+    text-align: center;
+}
+
+main #hero-banner h1 span {
+    color: #E06504;
+}
+
+/* Past section */
+
+main #past {
+    background-color: #f4f4f4; 
+}
+
+main #past .container .card-container {
+    display: flex;
+    justify-content: space-between;
+    background-color: #f4f4f4;
+}
+
+main #past .container .card-container .card {
+    width: 33%;
+    padding: 1rem;
+    background-color: #ffffff;
+    border-radius: 3px;
+    box-shadow: 0 0 5px #aeaeae;
+}
+
+main #past .container .card-container .card:hover {
+    box-shadow: 0 0 25px #8a8a8a;
+}
+
+main #past .container .card-container .card img {
+    width: 100%;
+    height: 250px;
+    margin-bottom: 1rem;
+    border-radius: 3px;
+}
+
+main #past .container .card-container .card h3 {
+    margin-bottom: 2rem;
+}
+
+main #past .card-container .card a:hover {
+    text-decoration: underline; 
+} 
+
+
+/* Present section */
+
+main #present {
+    display: flex;
+}
+
+main #present img {
+    width: 50%;
+    margin-right: 3rem;
+}
+
+main #present #content {
+    padding: 3rem;
+}
+
+main #present #content p {
+    line-height: 2;
+}
+
+/* Future section */
+
+main #future {
+    background-color: #f4f4f4;
+}
+
+main #future img {
+    width: 300px;
+    height: 175px;
+    float: left;
+    margin-right: 3rem;
+    border-radius: 5px;
+}
+
+main #future p {
+    line-height: 2;
+}
+
+main #future {
+    background: url("https://images.unsplash.com/photo-1546082505-6e87dcfcaee4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2550&q=80") no-repeat fixed center center/cover;
+}
+/* Footer */
+
+footer {
+    background-color: #042E5F;
+    text-align: center;
+    color: white;
+    padding: 20px;
+}
+
+/* Contact Form */
+
+#footer form {
+    margin: 3.5rem auto;
+}
+
+#footer form h3 {
+    margin: 3.5rem auto;
+}
+
+footer form .contact-form {
+    width: 390px;
+    margin: 0 auto;
+}
+
+#footer form .contact-form label {
+    display: block;
+    margin-bottom: 8px;
+    text-align: left; 
+}
+
+#footer form .contact-form input {
+    margin-bottom: 1.5rem;
+    width: 100%;
+    font-size: 1rem;
+    padding: 5px;
+    border-radius: 3px;
+
+}
+
+#footer form .contact-form textarea {
+    min-height: 100px;
+    width: 100%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1rem;
+}
+
+#footer form .contact-form #submit {
+    color: white;
+    background: #E06504;
+    padding: 15px;
+    text-transform: uppercase;
+    margin-top: 2rem;
+}
+
+/* Ipad */
+
+@media (max-width: 899px){
+    main #hero-banner h1 {
+        font-size: 3.5rem;
+    }
+
+    main #past .container {
+        padding: 1rem;
+    }
+
+    main #present #content {
+        padding: 1.5rem;
+    }
+
+    main #present img {
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 576px){
+    
+    /* Header */
+
+    body header {
+        padding: 0.75rem;
+    }
+
+    body header nav ul li a {
+        padding: 2px;
+    }
+
+    main #hero-banner h1 {
+        font-size: 2rem;
+    }
+
+    /* Hero-banner */
+
+    main #hero-banner {
+        height: 114vh;
+    }
+
+    /* Past */
+
+    main #past .container .card-container{
+        padding: 0.2rem;
+        display: block;
+    }
+
+    main #past .container .card-container .card {
+        width: 100%;
+    }
+
+    /* Present */
+
+    main #present #content {
+        padding: 1rem;
+    }
+
+    main #present img {
+        display: none;
+    }
+
+    /* Future */
+
+    body main #future .container {
+        padding: 1rem;
+    }
+
+    body main #future .container img {
+        margin-right: 0;
+        display: block;
+        width: 100%;
+        padding-bottom: 1rem;
+    }
+
+    /* Footer */
+
+    footer form .contact-form {
+        width: 280px;
+    }    
+}

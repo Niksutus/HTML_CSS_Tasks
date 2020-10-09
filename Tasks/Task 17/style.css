@@ -1,0 +1,68 @@
+.first-task {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: blue;
+    transition-duration: 2s;
+}
+
+.first-task:hover {
+    transform: scale(1.5,1.5);
+    background-color: green;   
+}
+
+.second-task {
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+    transition-duration: 2s;   
+}
+
+.second-task:hover {
+   transform: rotate(180deg); 
+   background-color: green;
+}
+
+.third-task {
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+    color: blue;
+    transition-duration: 2s;
+}
+
+.third-task:hover {
+    transform: scale(-0.5,-0.5);
+    color: white;
+}
+
+.fifth-task {
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+    transition: 2s step-end;
+}
+
+.fifth-task:hover {
+    border-top: 10px solid pink;
+}
+
+.animated-circle {
+    width: 200px;
+    height: 200px;
+    animation: circle 8s infinite;
+}
+
+@keyframes circle {
+    0% {border-radius: 0%;
+        background-color: green;}
+    25% {border-radius: 50%;
+        background-color: yellow;}
+    50% {border-radius: 0%;
+        background-color: salmon;}
+    75% {border-radius: 50%;
+        background-color: purple;}
+    100% {border-radius: 0%;
+        background-color: orange;}
+    
+}
